@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#timeline {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#totals {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 40px 0;  /* Increased margin to add space between totals and map */
+    font-size: 1.5em;  /* Increased font size for totals */
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+}
