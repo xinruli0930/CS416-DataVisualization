@@ -1,7 +1,7 @@
 // Load CSV files and process data
 const loadData = async (date) => {
     console.log(`Loading data for: ${date}`); // Debug log
-    const data = await d3.csv(`Data/${date}.csv`);
+    const data = await d3.csv(`./Data/${date}.csv`);
     console.log(`Data loaded: `, data); // Debug log
 
     // Aggregate data by country
@@ -61,7 +61,7 @@ const createMap = (aggregatedData) => {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    d3.json("Data/world-110m.json").then(world => {
+    d3.json("./Data/world-110m.json").then(world => {
         svg.append("path")
             .datum(topojson.feature(world, world.objects.countries))
             .attr("d", path)
