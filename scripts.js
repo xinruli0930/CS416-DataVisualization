@@ -61,7 +61,7 @@ const createMap = (aggregatedData) => {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    d3.json("data/world-110m.json").then(world => {
+    d3.json("Data/world-110m.json").then(world => {
         svg.append("path")
             .datum(topojson.feature(world, world.objects.countries))
             .attr("d", path)

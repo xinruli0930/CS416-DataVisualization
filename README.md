@@ -24,4 +24,4 @@ The data used in this dashboard is obtained from John Hopkins University's Covid
 
 ## How to Deploy
 
-To deploy the Covid-19 Dashboard, copy the URL: https://xinruli0930.github.io/CS416-DataVisualization
+To deploy the Covid-19 Dashboard, copy the URL: https://xinruli0930.github.io
